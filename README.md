@@ -91,3 +91,34 @@ __pycache__/
 
 이를 통해 API 키가 들어 있는 .env 파일과 Python 캐시 파일이
 GitHub 저장소에 업로드되는 것을 방지합니다. 
+
+## 7. 결과물 확인 방법
+
+### 1) 프로그램 실행
+터미널(Terminal)에서 아래 명령어를 입력하여 프로그램을 실행합니다.  
+
+
+python travel_planner.py
+
+
+2) 여행 날짜 입력
+프로그램 실행 후 안내 메시지가 나오면 YYYY-MM-DD 형식으로 원하는 여행 날짜를 입력합니다.
+
+입력 예시: 2026-08-20
+
+3) 생성된 결과물 확인
+프로그램 실행이 완료되면 프로젝트 Root 경로의 results/ 폴더에 아래 2가지 결과물이 자동으로 생성됩니다.
+
+원천 데이터 (JSON)
+
+파일명: YYYY-MM-DD_data.json (예: 2026-08-20_data.json)
+
+내용: Gemini API 및 Kakao Local API에서 받아온 추천 지역, 날씨, 축제 정보, 맛집 목록의 Raw Data
+
+최종 여행 리포트 (Markdown)
+
+파일명: YYYY-MM-DD_travel_plan.md (예: 2026-08-20_travel_plan.md)
+
+내용: 사용자 제공용 최종 여행 일정 및 맛집 추천 리포트
+
+💡 참고: 생성된 .md 파일은 VS Code 등의 마크다운 프리뷰(Ctrl + Shift + V) 기능을 활용하여 시각적으로 깔끔하게 확인할 수 있습니다.
