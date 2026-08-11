@@ -48,12 +48,12 @@ pip install requests python-dotenv google-genai
 
 프로젝트 구조는 다음과 같습니다.
 
-travel_planner/
-├── travel_planner.py
-├── README.md
-├── .gitignore
-├── .env
-└── results/
+travel_planner/  
+├── travel_planner.py  
+├── README.md  
+├── .gitignore  
+├── .env  
+└── results/  
 
 .env 파일에 다음과 같이 API 키를 입력합니다.
 GEMINI_API_KEY=여기에_Gemini_API_키_입력
@@ -62,8 +62,8 @@ KAKAO_REST_API_KEY=여기에_Kakao_REST_API_키_입력
 ### 5-2. API 키 확인
 
 프로그램을 실행하면 .env 파일에 설정된 환경변수에서
-API 키를 자동으로 불러옵니다.
-from dotenv import load_dotenv
+API 키를 자동으로 불러옵니다.  
+from dotenv import load_dotenv  
 import os
 
 load_dotenv()
@@ -85,8 +85,8 @@ GitHub와 같은 공개 저장소에 절대로 공개해서는 안 됩니다.
 
 현재 프로젝트의 .gitignore에는 다음과 같은 내용을 포함합니다.
 
-.env
-__pycache__/
+.env  
+__pycache__/  
 *.pyc
 
 이를 통해 API 키가 들어 있는 .env 파일과 Python 캐시 파일이
